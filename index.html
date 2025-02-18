@@ -3,70 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation -->
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Deep kotwal</h1>
-            <p>Passionate Web Developer</p>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="intro">
+            <h1>Hi, I'm [Gajendra G]</h1>
+            <p>A Passionate Web Developer</p>
+            <a href="#about" class="btn">Learn More</a>
         </div>
     </section>
 
-    <section id="skills" class="section">
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="your-photo.jpg" alt="Your Photo">
+            <div>
+                <p>Hello! I'm Gajendra, a web developer with a passion for creating modern and responsive websites. I have honed my skills in html,css and java script.</p>
+                <p>I'm currently pursuing my bachelor's degree in EXTC Engineering from SFIT, and have worked on various web development projects that have helped me grow my expertise.</p>
+                <p>I'm excited to continue my journey as a web developer and bring innovative solutions to the web.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
         <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">React</div>
-            <div class="skill">Node.js</div>
-            <div class="skill">Git</div>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <h3>Frontend Development</h3>
+                <p>HTML, CSS, JavaScript, React</p>
+            </div>
+            <div class="skill-item">
+                <h3>Soft skills</h3>
+                <p>Problem Solving,Communication,Creativity</p>
+            </div>
+            <div class="skill-item"> 
+                <h3>Tools and Technologies</h3>
+                <p>Git,VS Code,blockchain,dapps</p>
+            </div>
         </div>
     </section>
 
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project">
-                <img src="images/pro 1.png" alt="Project 1">
-                <p>A simple interactive tic tac toe game which is easy to play </p>
-            </div>
-            <div class="project">
-                <img src="images/pro 2.png" alt="Project 2">
-                <p>This is a form which take input() from user and displays it below in a table,it has all possible kind of inputs i.e dropdown date seletionand charcter and number </p>
-            </div>
-            <!-- Add more project cards as needed -->
-        </div>
-    </section>
-
-    <section id="contact" class="section">
+    <!-- Contact Section -->
+    <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: deepkotwal10@gmail.com</p>
-        <p>Phone: (+91) 8169711105</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/deep-kotwal-b146422b7/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/DeepKotwal" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/gajendra-gouda-538533255/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/gajjuu" target="_blank">GitHub</a>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Deep Kotwal (DK)</p>
+        <p>&copy; 2024 Gajendra G. All rights reserved.</p>
     </footer>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
